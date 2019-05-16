@@ -1,6 +1,8 @@
 
 # Cypress-Edge
 
+[![CircleCI](https://circleci.com/gh/YOU54F/cypress-edge/tree/master.svg?style=svg)](https://circleci.com/gh/YOU54F/cypress-edge/tree/master)
+
 Following on my blog post
 [The new Chromium-based Microsoft Edge for Mac has been leaked — And it works with Cypress.](https://blog.you54f.com/2019/05/15/the-new-chromium-based-microsoft-edge-for-mac-has-been-leaked%e2%80%8a-%e2%80%8aand-it-works-with-cypress/)
 
@@ -15,7 +17,7 @@ _macosx only atm_
 
 1. Download Microsoft Edge for Mac (Canary Build) for MacOS [here](https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-76.0.151.0.pkg)
 2. Make a new directory
-3. Run `export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip`
+3. Run `export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/3.2.0-edge.1.zip`
 4. Run `npm init`
 5. Run `npm install @you54f/cypress --save`
 6. Run `node_modules/.bin/cypress open --browser edge` to open in interactive mode, and setup [Cypress.io](https://cypress.io)'s example project
@@ -30,7 +32,8 @@ Currently tested
 
 - [x] Microsoft Edge for Mac (Canary Build)
   - Binary package [here](https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-76.0.151.0.pkg)
-- [ ] Microsoft Edge for Mac (Dev Build) 
+  - [X] Passing against CircleCI / MacOS Executor
+- [ ] Microsoft Edge for Mac (Dev Build)
   - Binary package [here](https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-76.0.151.0.pkg)
 - [ ] Microsoft Edge for Windows 10 (Canary Build)
   - Binary package [here](https://c2rsetup.officeapps.live.com/c2r/downloadEdge.aspx?ProductreleaseID=Edge&platform=Default&version=Edge&Channel=Canary&language=en-us&Consent=1&IID=fe1b2a91-d63d-532d-ac23-eaad1e276343)
