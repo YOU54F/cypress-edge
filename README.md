@@ -60,7 +60,7 @@ https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutou
 Add `CYPRESS_INSTALL_BINARY` env var override, to download the forked cypress binary.
 
 ```
-export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip
+export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/3.2.0-edge.1.zip
 ```
 
 Install this fork, as a published npm module
