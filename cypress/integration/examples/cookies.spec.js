@@ -4,7 +4,7 @@ context('Cookies', () => {
   beforeEach(() => {
     Cypress.Cookies.debug(true)
 
-    cy.visit('https://example.cypress.io/commands/cookies')
+    cy.visit('https://kitchensink.netlify.com/commands/cookies')
 
     // clear cookies again after visiting to remove
     // any 3rd party cookies picked up such as cloudflare

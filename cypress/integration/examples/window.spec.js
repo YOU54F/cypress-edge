@@ -2,7 +2,7 @@
 
 context('Window', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/window')
+    cy.visit('https://kitchensink.netlify.com/commands/window')
   })
 
   it('cy.window() - get the global window object', () => {

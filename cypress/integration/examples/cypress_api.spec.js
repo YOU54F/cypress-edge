@@ -2,7 +2,7 @@
 
 context('Cypress.Commands', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   // https://on.cypress.io/custom-commands
@@ -37,7 +37,7 @@ context('Cypress.Commands', () => {
 
 context('Cypress.Cookies', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   // https://on.cypress.io/cookies
@@ -75,7 +75,7 @@ context('Cypress.Cookies', () => {
 
 context('Cypress.Server', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   // Permanently override server options for
@@ -92,7 +92,7 @@ context('Cypress.Server', () => {
 
 context('Cypress.arch', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Get CPU architecture name of underlying OS', () => {
@@ -103,7 +103,7 @@ context('Cypress.arch', () => {
 
 context('Cypress.config()', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Get and set configuration options', () => {
@@ -133,7 +133,7 @@ context('Cypress.config()', () => {
 
 context('Cypress.dom', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   // https://on.cypress.io/dom
@@ -149,7 +149,7 @@ context('Cypress.dom', () => {
 
 context('Cypress.env()', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   // We can set environment variables for highly dynamic values
@@ -178,7 +178,7 @@ context('Cypress.env()', () => {
 
 context('Cypress.log', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Control what is printed to the Command Log', () => {
@@ -189,7 +189,7 @@ context('Cypress.log', () => {
 
 context('Cypress.platform', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Get underlying OS name', () => {
@@ -200,7 +200,7 @@ context('Cypress.platform', () => {
 
 context('Cypress.version', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Get current version of Cypress being run', () => {
@@ -211,7 +211,7 @@ context('Cypress.version', () => {
 
 context('Cypress.spec', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/cypress-api')
+    cy.visit('https://kitchensink.netlify.com/cypress-api')
   })
 
   it('Get current spec information', () => {

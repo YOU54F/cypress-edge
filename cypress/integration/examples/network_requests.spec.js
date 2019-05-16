@@ -2,7 +2,7 @@
 
 context('Network Requests', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/network-requests')
+    cy.visit('https://kitchensink.netlify.com/commands/network-requests')
   })
 
   // Manage AJAX / XHR requests in your app
