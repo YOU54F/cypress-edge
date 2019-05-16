@@ -17,10 +17,6 @@ workflows:
           command: |
             sudo installer -pkg MicrosoftEdgeCanary-76.0.151.0.pkg -target /  
       - cypress/run:
-          name: Install canary beta
-          command: |
-            sudo installer -pkg MicrosoftEdgeCanary-76.0.151.0.pkg -target /
-      - cypress/run:
           name: Get cypress-edge package
           command: |
             curl -O https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip
