@@ -2,7 +2,7 @@
 
 context('Utilities', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/utilities')
+    cy.visit('https://kitchensink.netlify.com/utilities')
   })
 
   it('Cypress._ - call a lodash method', () => {
@@ -30,7 +30,7 @@ context('Utilities', () => {
     cy.get('.utility-blob').then(($div) =>
     // https://github.com/nolanlawson/blob-util#imgSrcToDataURL
     // get the dataUrl string for the javascript-logo
-      Cypress.Blob.imgSrcToDataURL('https://example.cypress.io/assets/img/javascript-logo.png', undefined, 'anonymous')
+      Cypress.Blob.imgSrcToDataURL('https://kitchensink.netlify.com/assets/img/javascript-logo.png', undefined, 'anonymous')
       .then((dataUrl) => {
         // create an <img> element and set its src to the dataUrl
         let img = Cypress.$('<img />', { src: dataUrl })

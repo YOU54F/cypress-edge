@@ -2,7 +2,7 @@
 
 context('Querying', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/querying')
+    cy.visit('https://kitchensink.netlify.com/commands/querying')
   })
 
   // The most commonly used query is 'cy.get()', you can

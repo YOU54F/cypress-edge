@@ -2,7 +2,7 @@
 
 context('Misc', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/misc')
+    cy.visit('https://kitchensink.netlify.com/commands/misc')
   })
 
   it('.end() - end the command chain', () => {

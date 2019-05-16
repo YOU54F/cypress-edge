@@ -3,7 +3,7 @@
 context('Spies, Stubs, and Clock', () => {
   it('cy.spy() - wrap a method in a spy', () => {
     // https://on.cypress.io/spy
-    cy.visit('https://example.cypress.io/commands/spies-stubs-clocks')
+    cy.visit('https://kitchensink.netlify.com/commands/spies-stubs-clocks')
 
     let obj = {
       foo () {},
@@ -18,7 +18,7 @@ context('Spies, Stubs, and Clock', () => {
 
   it('cy.stub() - create a stub and/or replace a function with stub', () => {
     // https://on.cypress.io/stub
-    cy.visit('https://example.cypress.io/commands/spies-stubs-clocks')
+    cy.visit('https://kitchensink.netlify.com/commands/spies-stubs-clocks')
 
     let obj = {
       /**
@@ -46,7 +46,7 @@ context('Spies, Stubs, and Clock', () => {
     let now = new Date(Date.UTC(2017, 2, 14)).getTime()
 
     cy.clock(now)
-    cy.visit('https://example.cypress.io/commands/spies-stubs-clocks')
+    cy.visit('https://kitchensink.netlify.com/commands/spies-stubs-clocks')
     cy.get('#clock-div').click()
       .should('have.text', '1489449600')
   })
@@ -59,7 +59,7 @@ context('Spies, Stubs, and Clock', () => {
     let now = new Date(Date.UTC(2017, 2, 14)).getTime()
 
     cy.clock(now)
-    cy.visit('https://example.cypress.io/commands/spies-stubs-clocks')
+    cy.visit('https://kitchensink.netlify.com/commands/spies-stubs-clocks')
     cy.get('#tick-div').click()
       .should('have.text', '1489449600')
     cy.tick(10000) // 10 seconds passed
