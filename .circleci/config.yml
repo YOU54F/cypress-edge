@@ -6,6 +6,7 @@ jobs:
       xcode: 10.1.0
     working_directory: ~/app
     steps:
+      - checkout
       - run:
           name: Download canary beta
           command: |
@@ -19,7 +20,7 @@ jobs:
           command: |
             curl -O https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip
       - run:
-          name: export env var
+          name: export env var - this is actually set in circle ci config at a project level
           command: |
             export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip  
       - run:
