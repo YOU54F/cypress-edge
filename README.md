@@ -33,8 +33,9 @@ Currently tested
 - [x] Microsoft Edge for Mac (Canary Build)
   - Binary package [here](https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-76.0.151.0.pkg)
   - [X] Passing against CircleCI / MacOS Executor
-- [ ] Microsoft Edge for Mac (Dev Build)
+- [X] Microsoft Edge for Mac (Dev Build)
   - Binary package [here](https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-76.0.151.0.pkg)
+  - [X] Passing against CircleCI / MacOS Executor
 - [ ] Microsoft Edge for Windows 10 (Canary Build)
   - Binary package [here](https://c2rsetup.officeapps.live.com/c2r/downloadEdge.aspx?ProductreleaseID=Edge&platform=Default&version=Edge&Channel=Canary&language=en-us&Consent=1&IID=fe1b2a91-d63d-532d-ac23-eaad1e276343)
 - [ ] Microsoft Edge for Windows 10 (Dev Build) 
@@ -52,27 +53,27 @@ Download Microsoft Edge for Mac (Canary Build) for MacOS [here](https://officecd
 
 Bare url
 
-```
+```sh
 https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-76.0.151.0.pkg
 
 ```
 
 Add `CYPRESS_INSTALL_BINARY` env var override, to download the forked cypress binary.
 
-```
-export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/3.2.0-edge.1.zip
+```sh
+export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.3.0/cypress.zip
 ```
 
 Install this fork, as a published npm module
 
-```
+```sh
 npm install @you54f/cypress --save
 ```
 
 Run Cypress, select Edge from Browser list, test and report issues to Cypress or on here 👍
 
-```
-➜  cypress-edge git:(master) ✗ export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.2.0-edge.1/cypress-3.2.0-edge.1.zip
+```sh
+➜  cypress-edge git:(master) ✗ export CYPRESS_INSTALL_BINARY=https://github.com/YOU54F/cypress/releases/download/v3.3.0/cypress.zip
 ➜  cypress-edge git:(master) ✗ npm install @you54f/cypress --save
 
 > @you54f/cypress@3.2.0-edge.1 postinstall /Users/you54f/dev/saftest/githubrepos/cypress-edge/node_modules/@you54f/cypress
