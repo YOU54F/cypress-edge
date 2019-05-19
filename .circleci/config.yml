@@ -28,6 +28,7 @@ jobs:
           command: |
             npm install @you54f/cypress --save  
       - run:
+
           name: run cypress on edgeCanary
           command: |
             node_modules/.bin/cypress run --browser edgeCanary 
@@ -61,7 +62,7 @@ jobs:
           name: run cypress on edgeDev
           command: |
             node_modules/.bin/cypress run --browser edgeDev 
-
+            
 workflows:
   build-test:
     jobs:
