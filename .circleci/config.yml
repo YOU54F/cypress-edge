@@ -31,7 +31,7 @@ jobs:
 
           name: run cypress on edgeCanary
           command: |
-            node_modules/.bin/cypress run --browser edgeCanary 
+            node_modules/.bin/cypress run --browser edgeCanary --record
   test_edge_dev:
     macos:
       xcode: 10.1.0
@@ -61,7 +61,7 @@ jobs:
       - run:
           name: run cypress on edgeDev
           command: |
-            node_modules/.bin/cypress run --browser edgeDev 
+            node_modules/.bin/cypress run --browser edgeDev --record
             
 workflows:
   build-test:
