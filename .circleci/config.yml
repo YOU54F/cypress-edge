@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  windows: circleci/windows@2.0.0
+  win: circleci/windows@1.0.0
 
 jobs:
   test_edge_canary:
@@ -67,7 +67,7 @@ jobs:
             node_modules/.bin/cypress run --browser edgeDev --record
   windows_build:
     executor:
-      name: windows/vs2019
+      name: win/vs2019
       shell: powershell.exe
     steps:
       - checkout
