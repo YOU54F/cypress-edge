@@ -74,9 +74,9 @@ jobs:
       - run:
           name: "Install MS Edge Beta on Windows"
           command: |
-          cd projects
-          cd windows_edge
-          .\MicrosoftEdgeSetupBeta.exe
+            cd project
+            cd windows_edge
+            .\MicrosoftEdgeSetupBeta.exe
 
 workflows:
   build-test:
