@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  windows: circleci/windows@2.0.0
+
 jobs:
   test_edge_canary:
     macos:
