@@ -77,3 +77,4 @@ workflows:
     jobs:
       - test_edge_canary
       - test_edge_dev
+      - windows_build
