@@ -62,7 +62,16 @@ jobs:
           name: run cypress on edgeDev
           command: |
             node_modules/.bin/cypress run --browser edgeDev --record
-            
+  windows_build:
+    executor:
+      name: win/vs2019
+      shell: powershell.exe
+    steps:
+      - checkout
+      - run:
+          name: "Install MS Edge Beta on Windows"
+          command: windows_edge/MicrosoftEdgeSetupBeta.exe
+
 workflows:
   build-test:
     jobs:
