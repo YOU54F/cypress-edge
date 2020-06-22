@@ -1,5 +1,6 @@
 
-# Cypress-Edge
+# Cypress-Edge -  NOW ARCHIVED AS CYPRESS SUPPORTS THIS NATIVELY AND CHROMIUM EDGE HAS BEEN RELEASED PUBLICLY
+
 
 [![CircleCI](https://circleci.com/gh/YOU54F/cypress-edge/tree/master.svg?style=svg)](https://circleci.com/gh/YOU54F/cypress-edge/tree/master)
 
